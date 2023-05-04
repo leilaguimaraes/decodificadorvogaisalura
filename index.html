@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/reset.css">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+  <title>Alura - Decodificador de Texto</title>
+</head>
+<body>
+  <header>
+    <img src="./src/Top.png" alt="Logo da alura">
+  </header>
+  <main>
+   
+      <div class="decodificador--input">
+        <textarea name="Texto" id="textoinput" cols="30" rows="10" placeholder="Digite seu texto"></textarea>
+
+        <div class="text--explanation">
+        <img src="./src/Vector.png" alt="aviso">
+        Apenas letras minúsculas e sem acento
+        </div>
+
+        <div class="buttons">
+          <input type="button" value="Criptografar" class="button-primary"
+          onclick="criptografar()">
+          <input type="button" value="Descriptografar" class="button-secondary"
+          onclick="descriptografar()">
+        </div>
+        
+      </div>
+  
+    
+    
+    <div id="decodificador--output">
+      <div id="imagem-e-texto">
+      <img src="./src/High quality products 1 1.svg" alt="ilustração de menino com lupa olhando um diamante">
+      <div id = 'textoimagem'>
+        <h4>Nenhuma mensagem encontrada</h4>
+        <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+        </div >
+        <input type="button" value="Copiar" class="button-secondary" id="copiar"
+        onclick="copiar()">
+      </div>
+    </div>
+  </main>
+  <script src="./script.js"> </script>
+</body>
+</html>
